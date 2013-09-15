@@ -1,0 +1,203 @@
+<!doctype HTML>
+<html lang="en">
+<head>
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+	<link rel="image_src" href="images/blueBlack.png" />
+    <meta property="og:title" content="iPhone 5c Case Generator"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="http://www.thomaspalumbo.com/projects/iphone/images/blueBlack.png"/>
+    <meta property="og:site_name" content="iPhone 5c Case Generator"/>
+    <meta property="fb:admins" content="thomasp423"/>
+    <meta property="og:description"
+          content="Click the button for a new combination."/>
+	<style type="text/css">
+	body {
+		font-family: 'Helvetica', sans-serif;
+		background: #fff;	
+		text-align: center;
+		color: #161616;
+	}
+	
+	h1 {
+	font-weight: 300;
+	font-size: 40px;
+	}
+	
+	section {
+		width: 50%;
+		margin: 0 auto;
+	}
+	
+	section img {
+		max-height: 70%;
+		margin: 0 auto;
+		margin-top: 2%;
+	}
+	
+	img {
+		border: none;
+		outline: none;
+	}
+	
+	button {
+		margin: 0;
+		background: #bbb;
+		border-radius: 4px;
+		webkit-border-radius: 4px;
+		moz-border-radius: 4px;
+		border-style: none;
+		border: none;
+		font-size: 16px;
+		padding: 10px 21px;
+		color: #fff;
+	}
+	
+	button:hover {
+		cursor: pointer;
+		background: #aaa;
+	}
+
+	
+@media (max-width: 320px) {
+	body {
+		padding: 0 2%;
+	}
+	
+	h1 {
+	font-size: 24px;
+	}
+	
+	button {
+		padding: 10px 7px;
+		margin-top: -3%;
+		font-family: 10px;
+	}
+	
+	section img {
+		max-height: 65%;
+	}
+	}
+
+	</style>
+</head>
+
+<body>
+<header><h1>iPhone 5c Case Generator </h1></header>
+
+<section>
+<button class="button" type="button">New Combination</button>
+<p class="output"></p>
+</section>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.button').click(function() {
+			
+			// roll a random number
+			var randomNum = Math.floor((Math.random()*29));
+			
+			// Array of images
+			var imgArray = new Array();
+			
+			imgArray[0] = new Image();
+			imgArray[0].src = 'images/blueBlack.png';
+			
+			imgArray[1] = new Image();
+			imgArray[1].src = 'images/blueBlue.png';
+			
+			imgArray[2] = new Image();
+			imgArray[2].src = 'images/blueGreen.png';
+			
+			imgArray[3] = new Image();
+			imgArray[3].src = 'images/blueRed.png';
+			
+			imgArray[4] = new Image();
+			imgArray[4].src = 'images/blueYellow.png';
+			
+			imgArray[5] = new Image();
+			imgArray[5].src = 'images/greenBlack.png';
+			
+			imgArray[6] = new Image();
+			imgArray[6].src = 'images/greenBlue.png';
+			
+			imgArray[7] = new Image();
+			imgArray[7].src = 'images/greenGreen.png';
+			
+			imgArray[8] = new Image();
+			imgArray[8].src = 'images/greenRed.png';
+			
+			imgArray[9] = new Image();
+			imgArray[9].src = 'images/greenWhite.png';
+			
+			imgArray[10] = new Image();
+			imgArray[10].src = 'images/greenYellow.png';
+			
+			imgArray[11] = new Image();
+			imgArray[11].src = 'images/redBlack.png';
+			
+			imgArray[12] = new Image();
+			imgArray[12].src = 'images/redBlue.png';
+			
+			imgArray[13] = new Image();
+			imgArray[13].src = 'images/redGreen.png';
+			
+			imgArray[14] = new Image();
+			imgArray[14].src = 'images/redRed.png';
+			
+			imgArray[15] = new Image();
+			imgArray[15].src = 'images/redWhite.png';
+			
+			imgArray[16] = new Image();
+			imgArray[16].src = 'images/redYellow.png';
+			
+			imgArray[17] = new Image();
+			imgArray[17].src = 'images/whiteBlack.png';
+			
+			imgArray[18] = new Image();
+			imgArray[18].src = 'images/whiteBlue.png';
+			
+			imgArray[19] = new Image();
+			imgArray[19].src = 'images/blueBlue.png';
+			
+			imgArray[20] = new Image();
+			imgArray[20].src = 'images/whiteGreen.png';
+			
+			imgArray[21] = new Image();
+			imgArray[21].src = 'images/whiteRed.png';
+			
+			imgArray[22] = new Image();
+			imgArray[22].src = 'images/whiteWhite.png';
+			
+			imgArray[23] = new Image();
+			imgArray[23].src = 'images/whiteYellow.png';
+			
+			imgArray[24] = new Image();
+			imgArray[24].src = 'images/yellowBlack.png';
+			
+			imgArray[25] = new Image();
+			imgArray[25].src = 'images/yellowBlue.png';
+			
+			imgArray[26] = new Image();
+			imgArray[26].src = 'images/yellowGreen.png';
+			
+			imgArray[27] = new Image();
+			imgArray[27].src = 'images/yellowRed.png';
+			
+			imgArray[28] = new Image();
+			imgArray[28].src = 'images/yellowWhite.png';
+			
+			imgArray[29] = new Image();
+			imgArray[29].src = 'images/yellowYellow.png';
+			
+			// Assign array to variable phoneCase
+			var phoneCase = imgArray[randomNum];
+			
+			//Output the image in html format
+		$('.output').html(phoneCase);
+			 });
+		});
+	</script>
+
+</body>
+</html> 
